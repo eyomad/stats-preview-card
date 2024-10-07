@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0b0c1c;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: "Lexend Deca", sans-serif;
+}
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    background-color: #1c1938;
+    border-radius: 10px;
+}
+main .box-1{
+    width: 400px;
+    height: 100%;
+    background-color: #1c1938;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.box-2 img:nth-of-type(1){
+    width: 400px;
+    min-height: 350px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box-2 img:nth-of-type(2){
+    display: none;
+}
+.first-div{
+    font-weight: bolder;
+    gap: 5px;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+}
+.first-div span:nth-of-type(2){
+    color:#a65ade;
+}
+.third-div{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.third-div section p:nth-of-type(1){
+    font-weight: bolder;
+    font-size: 25px;
+}
+.third-div section p:nth-of-type(2){
+    font-size: 10px;
+}  
+@media screen and (max-width:500px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 800px;
+    }
+    .third-div{
+        display: flex;
+        flex-direction: column;
+    }
+    main .box-1{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 60px;
+        order: 2;
+    }
+    .box-2 img:nth-of-type(2){
+        width: 400px;
+        height: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: block;
+    }
+        .box-2 img:nth-of-type(1){
+            display: none;
+        }
+}
